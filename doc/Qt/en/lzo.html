@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- lastest modification : 2015-11-02 -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Compile Qt LZO</title>
+    <link href="classic.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div align="center">
+      <h1>Compile Qt LZO</h1>
+    </div>
+    <hr size="2" width="100%"> <br>
+    Web site : <a href="http://qtlzo.sourceforge.net">http://qtlzo.sourceforge.net</a><br>
+    Source code : <a
+      href="https://sourceforge.net/projects/qtlzo/files/">https://sourceforge.net/projects/qtlzo/files/</a><br>
+    Version : 2015-11-02<br>
+    <br>
+    <hr size="2" width="100%">
+    <h3>Table Of Contents</h3>
+    <ul>
+      <li>Qt LZO source directory</li>
+      <li>Place LZO library</li>
+      <li>Compile QtLzo</li>
+      <li>Generate QtLzo Qt Document<br>
+      </li>
+    </ul>
+    <br>
+    <hr size="2" width="100%">
+    <h3>Qt LZO source directory</h3>
+    <ul>
+      <li> QtLzo</li>
+      <ul>
+        <li>3rdparty</li>
+        <ul>
+          <li>scripts</li>
+          <ul>
+            <li>Update-LZO.js<br>
+            </li>
+          </ul>
+          <li>sources</li>
+          <ul>
+            <li>lzo-2.09.tar.gz<br>
+            </li>
+          </ul>
+          <li>Windows</li>
+          <ul>
+            <li>x64</li>
+            <ul>
+              <li>Debug</li>
+              <ul>
+                <li>dll</li>
+                <ul>
+                  <li>lzo2.dll</li>
+                  <li>lzo2.def</li>
+                  <li>lzo2.ilk</li>
+                  <li>lzo2.lib</li>
+                  <li>lzo2.pdb<br>
+                  </li>
+                </ul>
+                <li>lib</li>
+                <ul>
+                  <li>lzo2.lib<br>
+                  </li>
+                </ul>
+              </ul>
+              <li>Release</li>
+              <ul>
+                <li>dll</li>
+                <ul>
+                  <li>lzo2.dll</li>
+                  <li>lzo2.def</li>
+                  <li>lzo2.ilk</li>
+                  <li>lzo2.lib</li>
+                  <li>lzo2.pdb<br>
+                  </li>
+                </ul>
+                <li>lib</li>
+                <ul>
+                  <li>lzo2.lib<br>
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+            <li>x86</li>
+            <ul>
+              <li>Debug</li>
+              <ul>
+                <li>dll</li>
+                <ul>
+                  <li>lzo2.dll</li>
+                  <li>lzo2.def</li>
+                  <li>lzo2.ilk</li>
+                  <li>lzo2.lib</li>
+                  <li>lzo2.pdb<br>
+                  </li>
+                </ul>
+                <li>lib</li>
+                <ul>
+                  <li>lzo2.lib<br>
+                  </li>
+                </ul>
+              </ul>
+              <li>Release</li>
+              <ul>
+                <li>dll</li>
+                <ul>
+                  <li>lzo2.dll</li>
+                  <li>lzo2.def</li>
+                  <li>lzo2.ilk</li>
+                  <li>lzo2.lib</li>
+                  <li>lzo2.pdb<br>
+                  </li>
+                </ul>
+                <li>lib</li>
+                <ul>
+                  <li>lzo2.lib<br>
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+        </ul>
+        <li>doc</li>
+        <ul>
+          <li>HTML</li>
+          <ul>
+            <li>index.html<br>
+            </li>
+          </ul>
+          <li>ODT</li>
+          <ul>
+            <li>QtLZO.odt</li>
+            <li>QtLZO-TW.odt</li>
+            <li>QtLZO-CN.odt</li>
+          </ul>
+          <li>PDF</li>
+          <ul>
+            <li>QtLZO.pdf</li>
+            <li>QtLZO-TW.pdf</li>
+            <li>QtLZO-CN.pdf</li>
+          </ul>
+          <li>Qt</li>
+          <ul>
+            <li>cn</li>
+            <ul>
+              <li>examples.html</li>
+              <li>index.html</li>
+              <li>lzo.html</li>
+              <li>others.html</li>
+              <li>qtlzo.html</li>
+              <li>source.html</li>
+              <li>Replacements.txt<br>
+              </li>
+            </ul>
+            <li>en</li>
+            <ul>
+              <li>examples.html</li>
+              <li>index.html</li>
+              <li>lzo.html</li>
+              <li>others.html</li>
+              <li>qtlzo.html</li>
+              <li>source.html</li>
+            </ul>
+            <li>tw</li>
+            <ul>
+              <li>examples.html</li>
+              <li>index.html</li>
+              <li>lzo.html</li>
+              <li>others.html</li>
+              <li>qtlzo.html</li>
+              <li>source.html<br>
+              </li>
+            </ul>
+            <li>classic.css</li>
+            <li>index.html</li>
+            <li>Qt.pri</li>
+            <li>QtLzo.qhp<br>
+            </li>
+          </ul>
+          <li>TeX</li>
+          <ul>
+            <li>QtLZO.tex<br>
+            </li>
+          </ul>
+        </ul>
+        <li>examples</li>
+        <ul>
+          <li>lzotool</li>
+          <ul>
+            <li>lzotool.cpp</li>
+            <li>lzotool.ico</li>
+            <li>lzotool.pro</li>
+            <li>lzotool.rc</li>
+            <li>LZO.js<br>
+            </li>
+          </ul>
+          <li>examples.pro<br>
+          </li>
+        </ul>
+        <li>include</li>
+        <ul>
+          <li>QtLzo</li>
+          <ul>
+            <li>lzo</li>
+            <ul>
+              <li>LZO Header files<br>
+              </li>
+            </ul>
+            <li>headers.pri</li>
+            <li>QtLzo</li>
+            <li>qtlzo.hpp<br>
+            </li>
+          </ul>
+        </ul>
+        <li>src</li>
+        <ul>
+          <li>Embedded</li>
+          <ul>
+            <li>LZO</li>
+            <ul>
+              <li>lzo</li>
+              <ul>
+                <li>LZO Header files<br>
+                </li>
+              </ul>
+              <li>LZO.pri</li>
+              <li>qtlzo.cpp</li>
+              <li>qtlzo.hpp</li>
+              <li>ScriptableLzo.cpp<br>
+              </li>
+            </ul>
+          </ul>
+          <li>QtLzo</li>
+          <ul>
+            <li>qtlzo.cpp</li>
+            <li>ScriptableLzo.cpp</li>
+            <li>QtLzo.pro<br>
+            </li>
+          </ul>
+          <li>src.pro<br>
+          </li>
+        </ul>
+        <li>tests</li>
+        <ul>
+          <li>auto</li>
+          <ul>
+            <li>cmake</li>
+            <ul>
+              <li>cmake.pro</li>
+              <li>CMakeLists<br>
+              </li>
+            </ul>
+            <li>auto.pro<br>
+            </li>
+          </ul>
+          <li>tests.pro<br>
+          </li>
+        </ul>
+      </ul>
+    </ul>
+    <hr size="2" width="100%">
+    <h3> Place LZO library</h3>
+    If you are using Unix system, all you need is to compile LZO library
+    in regular way and install into default location.&nbsp; If you are
+    using Windows, the it is a little bit more complicated.&nbsp; You
+    will need to pick the correct library of your platform, then place
+    them in the correct directory.<br>
+    <br>
+    <h4>Unix</h4>
+    <br>
+    Compile LZO library under Unix, all you need is to use cmake to
+    configure and then compile, install to the default location.<br>
+    <br>
+    cmake ..\lzo-2.09<br>
+    make<br>
+    make install<br>
+    <br>
+    <h4>Windows</h4>
+    <br>
+    Windows will need different files on different platforms.<br>
+    <br>
+    <br>
+    <b>x64 Static</b><br>
+    <br>
+    <ul>
+      <li>QtLzo\3rdparty\Windows\x64\Debug\lib\lzo2.lib</li>
+      <li>QtLzo\3rdparty\Windows\x64\Release\lib\lzo2.lib</li>
+    </ul>
+    rename QtLzo\3rdparty\Windows\x64\Debug\lib\lzo2.lib into lzo2d.lib.<br>
+    <br>
+    copy lzo2.lib and lzo2d.lib into QtTargetDirectory\lib.<br>
+    <br>
+    <b>x64 Shared</b><br>
+    <br>
+    <ul>
+      <li>QtLzo\3rdparty\Windows\x64\Debug\dll\lzo2.dll</li>
+      <li>QtLzo\3rdparty\Windows\x64\Debug\dll\lzo2.lib</li>
+      <li>QtLzo\3rdparty\Windows\x64\Debug\dll\lzo2.ilk</li>
+      <li>QtLzo\3rdparty\Windows\x64\Debug\dll\lzo2.pdb</li>
+      <li>QtLzo\3rdparty\Windows\x64\Release\dll\lzo2.dll</li>
+      <li>QtLzo\3rdparty\Windows\x64\Release\dll\lzo2.lib</li>
+    </ul>
+    <br>
+    rename QtLzo\3rdparty\Windows\x64\Debug\lib\lzo2.dll into lzo2d.dll.<br>
+    rename QtLzo\3rdparty\Windows\x64\Debug\lib\lzo2.lib into lzo2d.lib.<br>
+    <br>
+    copy lzo2.dll and lzo2d.dll into QtTargetDirectory\bin.<br>
+    <br>
+    copy lzo2.ilk, lzo2.pdb, lzo2.lib and lzo2d.lib into
+    QtTargetDirectory\lib.<br>
+    <br>
+    <br>
+    <b>x86 Static</b><br>
+    <br>
+    <ul>
+      <li>QtLzo\3rdparty\Windows\x86\Debug\lib\lzo2.lib</li>
+      <li>QtLzo\3rdparty\Windows\x86\Release\lib\lzo2.lib</li>
+    </ul>
+    <br>
+    rename QtLzo\3rdparty\Windows\x86\Debug\lib\lzo2.lib into lzo2d.lib.<br>
+    <br>
+    copy lzo2.lib and lzo2d.lib into QtTargetDirectory\lib.<br>
+    <br>
+    <b>x86 Shared</b><br>
+    <br>
+    <ul>
+      <li>QtLzo\3rdparty\Windows\x86\Debug\dll\lzo2.dll</li>
+      <li>QtLzo\3rdparty\Windows\x86\Debug\dll\lzo2.lib</li>
+      <li>QtLzo\3rdparty\Windows\x86\Debug\dll\lzo2.ilk</li>
+      <li>QtLzo\3rdparty\Windows\x86\Debug\dll\lzo2.pdb</li>
+      <li>QtLzo\3rdparty\Windows\x86\Release\dll\lzo2.dll</li>
+      <li>QtLzo\3rdparty\Windows\x86\Release\dll\lzo2.lib</li>
+    </ul>
+    rename QtLzo\3rdparty\Windows\x86\Debug\lib\lzo2.dll into lzo2d.dll.<br>
+    rename QtLzo\3rdparty\Windows\x86\Debug\lib\lzo2.lib into lzo2d.lib.<br>
+    <br>
+    copy lzo2.dll and lzo2d.dll into QtTargetDirectory\bin.<br>
+    <br>
+    copy lzo2.ilk, lzo2.pdb, lzo2.lib and lzo2d.lib into
+    QtTargetDirectory\lib.<br>
+    <br>
+    <hr size="2" width="100%">
+    <h3>Compile QtLzo</h3>
+    After placing LZO library, you are ready to compile QtLzo.<br>
+    <br>
+    You need to use Qt source code to compile QtLzo module, the location
+    of QtLzo module as following :<br>
+    <ul>
+      <li>QtTargetDirectory</li>
+      <li>QtSourceDirectory</li>
+      <ul>
+        <li>QtLzo</li>
+        <li>qtbase</li>
+        <li>gnuwin32<br>
+        </li>
+        <li>...<br>
+        </li>
+      </ul>
+    </ul>
+    Normally, compile Qt uses separate source and target directories,
+    QtTargetDirectory is the target directory after Qt compiled,
+    QtSourceDirectory is the Qt source code directory.<br>
+    <br>
+    After you complete compiled Qt, do not make distclean or make clean,
+    decompress QtLzo, place it into QtSourceDirectory directory, and
+    rename it into QtLzo.<br>
+    <br>
+    <h4>Unix</h4>
+    cd QtLzo<br>
+    qmake<br>
+    make<br>
+    make install<br>
+    <h4>Windows</h4>
+    cd QtLzo<br>
+    qmake<br>
+    nmake<br>
+    nmake install<br>
+    <br>
+    Or<br>
+    <br>
+    cd QtLzo<br>
+    qmake<br>
+    jom<br>
+    nmake install<br>
+    <br>
+    This will do.<br>
+    <br>
+    <hr size="2" width="100%">
+    <h4>Generate QtLzo Qt Document</h4>
+    Move to directory QtLzo\doc\Qt :<br>
+    <br>
+    <b><i>cd QtLzo\doc\Qt</i></b><b><br>
+    </b><b><i>qhelpgenerator.exe QtLzo.qhp -o QtLzo.qch</i></b><br>
+    <br>
+    <h4>Add document into Qt Creator</h4>
+    <br>
+    Open up Qt Creator, Tool -&gt; Options -&gt; Help -&gt; Document
+    -&gt; Add, select QtLzo.qch.<br>
+    <br>
+    <h4>Add document into Qt Assistant</h4>
+    <br>
+    Open up Qt Assistant, Edit -&gt; Preference -&gt; Document -&gt;
+    Add,select QtLzo.qch.<br>
+    <br>
+    <hr size="2" width="100%">
+    <div align="center"><font color="#cc9933"><i><b>Neutrino
+            International Inc. 2001~2016</b></i></font><br>
+    </div>
+    <br>
+  </body>
+</html>
